@@ -22,7 +22,7 @@
     top: 0;
     width: 82.5%;
     left: 17.5%;
-    z-index: 12;
+    z-index: 2;
     height: 100%;
     background: var(--black);
     clip-path:polygon(0 0 , 0 0 , 0 100% , 0 100% ) ;
@@ -273,11 +273,15 @@ body{
 }
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:991px) {
     .navbar{
         width: 30%;
     }
     .main{
+        width: 70%;
+        left: 30%;
+    }
+    .search__bar{
         width: 70%;
         left: 30%;
     }
@@ -294,11 +298,15 @@ body{
         font-size: 1.1rem;
     }
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:576px) {
     .navbar{
         display: none;
     }
     .main{
+        width: 100%;
+        left: 0;
+    }
+    .search__bar{
         width: 100%;
         left: 0;
     }

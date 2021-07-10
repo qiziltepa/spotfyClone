@@ -165,7 +165,7 @@
         <i class="material-icons" style="font-size:36px">home</i>
         <p class="text">Home</p>
     </a>
-    <a href="#" class="text">
+    <a href="#" class="text search__button">
         <i class="material-icons" style="font-size:36px">search</i>
         <p class="text"> Search</p>
     </a>
@@ -191,9 +191,13 @@
   const main = document.querySelector('.main');
   const searchBar = document.querySelector('.search__bar');
   const searchClose = document.querySelector('.fa-arrow-left');
-  const searchButton = document.querySelector('.search__button');
+  const searchButton = document.querySelectorAll('.search__button');
 
-  searchButton.addEventListener('click' , () => {
+  searchButton[0].addEventListener('click' , () => {
+     main.classList.toggle('active');
+     searchBar.classList.toggle('active');
+  })
+  searchButton[1].addEventListener('click' , () => {
      main.classList.toggle('active');
      searchBar.classList.toggle('active');
   })
