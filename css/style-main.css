@@ -34,7 +34,8 @@ body{
     display: flex;
     align-items: center;
     text-decoration: none;
-    background: var(--blue);
+    text-align: center;
+
 }
 .info p:hover{
     color: var(--yellow);
@@ -46,7 +47,7 @@ body{
     left: 17.5%;
 }
 .nav-top{
-    top: 0;
+    top: -1%;
     position: sticky;
     background: var(--black);
     display: flex;
@@ -206,7 +207,32 @@ body{
     color: var(--yellow);
     transition: .6s;
 }
+.bottom-nav{
+    display: none;
+}
+
 @media screen and (max-width:800px) {
+    .navbar{
+        width: 30%;
+    }
+    .main{
+        width: 70%;
+        left: 30%;
+    }
+    .col{
+        overflow-x: scroll;
+    }
+    .col::-webkit-scrollbar{
+        height:0px;
+    }
+    .text{
+        font-size: .8rem;
+    }
+    .btn{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width:500px) {
     .navbar{
         display: none;
     }
@@ -214,10 +240,20 @@ body{
         width: 100%;
         left: 0;
     }
-    .col{
-        overflow-x: scroll;
+    .dropdown .text{
+        display: none;
     }
-    .col::-webkit-scrollbar{
-        height:0px;
+    .bottom-nav{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        position: sticky;
+        bottom: 0%;
+        z-index: 2;
+        background-color: var(--black);
+    }
+    .bottom-nav .text{
+        width: 50px;
     }
 }
