@@ -132,6 +132,8 @@ body{
     color: var(--yellow);
     transition: .6s;
 }
+
+
 @media screen and (max-width:800px) {
     .navbar{
         display: none;
