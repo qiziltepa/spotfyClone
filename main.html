@@ -7,6 +7,9 @@
     <title>Home</title>
     <link rel="stylesheet" href="./css/style-main.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -14,105 +17,155 @@
         <a href="#" class="text"><i class="material-icons" style="font-size:36px">search</i> Search</a>
         <a href="#" class="text"><i class="material-icons" style="font-size:36px">library_music</i> Library</a>
         <a href="#" class="text"><i class="material-icons" style="font-size:36px">account_box</i> Log In</a>
-        <hr>
+        <hr class="hr">
         <div class="sign">
             <a href="index.html" class="btn">Sign In</a>
         </div>
     </nav>
    <main class="main">
+    <div class="nav-top">
+        <h2>Logo Here</h2>
+        <div class="dropdown">
+            <i class="material-icons">account_circle</i>
+            <p class="text">Username</p>
+        </div>
+        <div class="disable">
+            <a href="#account"><p class="text">Account</p></a>
+            <a href="#profile"><p class="text">Profile</p></a>
+            <a href="#logOut"><p class="text">Log Out</p></a>
+        </div>
+    </div>
    <div class="part">
-    <h2 class="information" id="info">Favorite</h2>
+    <div class="info">
+        <h2 class="information" id="info">Favorite</h2>
+        <a href="#see_all"><p class="text">See All</p></a>
+    </div>
     <div class="col">
-     <a href="#music1" class="music">
+    <a href="#music1" class="music">
          <div class="item">
              <div class="item-img"><img id="img1" src="./img/22. Windows Logo.jpg" alt="img"></div>
              <div class="item-text">
-                 <p class="text" id="musicName">Rap God</p>
-                 <p class="text" id="artist">Eminem</p>
+                 <p class="text-music text" id="musicName">Godzilla</p>
+                 <p class="text-artist text" id="artist">Eminem</p>
                 </div>
          </div>
-     </a> <a href="#music2" class="music">
-         <div class="item">
-             <div class="item-img"><img id="img2" src="./img/22. Windows Logo.jpg" alt="img"></div>
-             <div class="item-text"><p class="text" id="text2">Windows</p></div>
-         </div>
-     </a>
-    </a> <a href="#music2" class="music">
+    </a><a href="#music1" class="music">
         <div class="item">
-            <div class="item-img"><img id="img2" src="./img/22. Windows Logo.jpg" alt="img"></div>
-            <div class="item-text"><p class="text" id="text2">Windows</p></div>
+            <div class="item-img"><img id="img1" src="./img/back-image.jpg" alt="img"></div>
+            <div class="item-text">
+                <p class="text-music text" id="musicName">Rap God</p>
+                <p class="text-artist text" id="artist">Eminem</p>
+               </div>
         </div>
-    </a>  </a> <a href="#music2" class="music">
+    </a>  <a href="#music1" class="music">
         <div class="item">
-            <div class="item-img"><img id="img2" src="./img/22. Windows Logo.jpg" alt="img"></div>
-            <div class="item-text"><p class="text" id="text2">Windows</p></div>
+            <div class="item-img"><img id="img1" src="./img/22. Windows Logo.jpg" alt="img"></div>
+            <div class="item-text">
+                <p class="text-music text" id="musicName">Godzilla</p>
+                <p class="text-artist text" id="artist">Eminem</p>
+               </div>
         </div>
-    </a>  </a> <a href="#music2" class="music">
-        <div class="item">
-            <div class="item-img"><img id="img2" src="./img/22. Windows Logo.jpg" alt="img"></div>
-            <div class="item-text"><p class="text" id="text2">Windows</p></div>
-        </div>
-    </a>
-    <a href="#music2" class="music">
-        <div class="item">
-            <div class="item-img"><img id="img2" src="./img/22. Windows Logo.jpg" alt="img"></div>
-            <div class="item-text"><p class="text" id="text2">Windows</p></div>
-        </div>
-    </a>
-    <a href="#music2" class="music">
-        <div class="item">
-            <div class="item-img"><img id="img2" src="./img/22. Windows Logo.jpg" alt="img"></div>
-            <div class="item-text"><p class="text" id="text2">Windows</p></div>
-        </div>
-    </a><a href="#music2" class="music">
-        <div class="item">
-            <div class="item-img"><img id="img2" src="./img/22. Windows Logo.jpg" alt="img"></div>
-            <div class="item-text"><p class="text" id="text2">Windows</p></div>
-        </div>
-    </a><a href="#music2" class="music">
-        <div class="item">
-            <div class="item-img"><img id="img2" src="./img/22. Windows Logo.jpg" alt="img"></div>
-            <div class="item-text"><p class="text" id="text2">Windows</p></div>
-        </div>
-    </a><a href="#music2" class="music">
-        <div class="item">
-            <div class="item-img"><img id="img2" src="./img/22. Windows Logo.jpg" alt="img"></div>
-            <div class="item-text"><p class="text" id="text2">Windows</p></div>
-        </div>
-    </a>
+   </a><a href="#music1" class="music">
+       <div class="item">
+           <div class="item-img"><img id="img1" src="./img/back-image.jpg" alt="img"></div>
+           <div class="item-text">
+               <p class="text-music text" id="musicName">Rap God</p>
+               <p class="text-artist text" id="artist">Eminem</p>
+              </div>
+       </div>
+   </a>  <a href="#music1" class="music">
+    <div class="item">
+        <div class="item-img"><img id="img1" src="./img/22. Windows Logo.jpg" alt="img"></div>
+        <div class="item-text">
+            <p class="text-music text" id="musicName">Godzilla</p>
+            <p class="text-artist text" id="artist">Eminem</p>
+           </div>
+    </div>
+</a><a href="#music1" class="music">
+   <div class="item">
+       <div class="item-img"><img id="img1" src="./img/back-image.jpg" alt="img"></div>
+       <div class="item-text">
+           <p class="text-music text" id="musicName">Rap God</p>
+           <p class="text-artist text" id="artist">Eminem</p>
+          </div>
+   </div>
+</a>
     </div>
    </div><div class="part">
-    <h2 class="information" id="info">Top</h2>
-    <div class="col">
-     <a href="#music1" class="music">
-         <div class="item">
-             <div class="item-img"><img id="img1" src="./img/22. Windows Logo.jpg" alt="img"></div>
-             <div class="item-text"><p class="text" id="text1">Windows</p></div>
-         </div>
-     </a> <a href="#music2" class="music">
-         <div class="item">
-             <div class="item-img"><img id="img2" src="./img/22. Windows Logo.jpg" alt="img"></div>
-             <div class="item-text"><p class="text" id="text2">Windows</p></div>
-         </div>
-     </a>
+    <div class="info">
+        <h2 class="information" id="info">For You</h2>
+        <a href="#see_all"><p class="text">See All</p></a>
     </div>
-   </div><div class="part">
-    <h2 class="information" id="info">For You</h2>
     <div class="col">
-     <a href="#music1" class="music">
-         <div class="item">
-             <div class="item-img"><img id="img1" src="./img/22. Windows Logo.jpg" alt="img"></div>
-             <div class="item-text"><p class="text" id="text1">Windows</p></div>
-         </div>
-     </a> <a href="#music2" class="music">
-         <div class="item">
-             <div class="item-img"><img id="img2" src="./img/22. Windows Logo.jpg" alt="img"></div>
-             <div class="item-text"><p class="text" id="text2">Windows</p></div>
-         </div>
-     </a>
+        <a href="#music1" class="music">
+            <div class="item">
+                <div class="item-img"><img id="img1" src="./img/22. Windows Logo.jpg" alt="img"></div>
+                <div class="item-text">
+                    <p class="text-music text" id="musicName">Godzilla</p>
+                    <p class="text-artist text" id="artist">Eminem</p>
+                   </div>
+            </div>
+       </a><a href="#music1" class="music">
+           <div class="item">
+               <div class="item-img"><img id="img1" src="./img/back-image.jpg" alt="img"></div>
+               <div class="item-text">
+                   <p class="text-music text" id="musicName">Rap God</p>
+                   <p class="text-artist text" id="artist">Eminem</p>
+                  </div>
+           </div>
+       </a>
+    </div>
+   </div> <div class="part">
+    <div class="info">
+        <h2 class="information" id="info">For You</h2>
+        <a href="#see_all"><p class="text">See All</p></a>
+    </div>
+    <div class="col">
+        <a href="#music1" class="music">
+            <div class="item">
+                <div class="item-img"><img id="img1" src="./img/22. Windows Logo.jpg" alt="img"></div>
+                <div class="item-text">
+                    <p class="text-music text" id="musicName">Godzilla</p>
+                    <p class="text-artist text" id="artist">Eminem</p>
+                   </div>
+            </div>
+       </a><a href="#music1" class="music">
+           <div class="item">
+               <div class="item-img"><img id="img1" src="./img/back-image.jpg" alt="img"></div>
+               <div class="item-text">
+                   <p class="text-music text" id="musicName">Rap God</p>
+                   <p class="text-artist text" id="artist">Eminem</p>
+                  </div>
+           </div>
+       </a>
     </div>
    </div> 
    </main>
+   <div class="bottom-nav">
+    <a href="#" class="text">
+        <i class="material-icons" style="font-size:36px">home</i>
+        <p class="text">Home</p>
+    </a>
+    <a href="#" class="text">
+        <i class="material-icons" style="font-size:36px">search</i>
+        <p class="text"> Search</p>
+    </a>
+    <a href="#" class="text">
+        <i class="material-icons" style="font-size:36px">library_music</i>
+         <p class="text">Library</p>
+        </a>
+    <a href="#" class="text">
+        <i class="material-icons" style="font-size:36px">account_box</i>
+        <p class="text"> Log In</p>
+        </a>
+   </div>
 </body>
 <script src="./js/index.js"></script>
+<script>
+$(document).ready(function(){
+    $('.dropdown').click(function(){
+        $('.disable').toggle();
+    })
+})
+</script>
 </html>
