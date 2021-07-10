@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./css/style-main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+
+
     <nav class="navbar">
         <a href="#" class="text"><i class="material-icons" style="font-size:36px">home</i> Home</a>
-        <a href="#" class="text"><i class="material-icons" style="font-size:36px">search</i> Search</a>
+        <a href="#" class="text search__button"><i class="material-icons" style="font-size:36px">search</i> Search</a>
         <a href="#" class="text"><i class="material-icons" style="font-size:36px">library_music</i> Library</a>
         <a href="#" class="text"><i class="material-icons" style="font-size:36px">account_box</i> Log In</a>
         <hr class="hr">
@@ -22,6 +25,20 @@
             <a href="index.html" class="btn">Sign In</a>
         </div>
     </nav>
+
+
+    <div class="search__bar">
+
+        <i class="fas fa-arrow-left"></i>
+        <form action="">
+     
+            <input type="search" name="searchInput" id="searchInput" placeholder="search any music">
+
+            <button type="submit" id="search__submit"><i class="fas fa-search"></i></button>
+     
+      </form>
+    </div>
+
    <main class="main">
     <div class="nav-top">
         <h2>Logo Here</h2>
@@ -141,6 +158,8 @@
     </div>
    </div> 
    </main>
+
+
    <div class="bottom-nav">
     <a href="#" class="text">
         <i class="material-icons" style="font-size:36px">home</i>
@@ -159,13 +178,45 @@
         <p class="text"> Log In</p>
         </a>
    </div>
-</body>
-<script src="./js/index.js"></script>
-<script>
-$(document).ready(function(){
-    $('.dropdown').click(function(){
-        $('.disable').toggle();
-    })
+
+
+
+
+
+
+   <script src="./js/index.js"></script>
+
+
+   <script>
+  const main = document.querySelector('.main');
+  const searchBar = document.querySelector('.search__bar');
+  const searchClose = document.querySelector('.fa-arrow-left');
+  const searchButton = document.querySelector('.search__button');
+
+  searchButton.addEventListener('click' , () => {
+     main.classList.toggle('active');
+     searchBar.classList.toggle('active');
+  })
+  
+searchClose.addEventListener('click' , () => {
+    main.classList.remove('active');
+     searchBar.classList.remove('active');
 })
-</script>
+
+
+   </script>
+
+
+
+
+
+   <script>
+    $(document).ready(function(){
+        $('.dropdown').click(function(){
+            $('.disable').toggle();
+        })
+    });
+    </script>
+    
+</body>
 </html>
