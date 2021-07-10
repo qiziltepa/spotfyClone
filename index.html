@@ -16,7 +16,7 @@
        
     <div class="sign up">
          
-        <i class="fas fa-times"></i>
+        <i class="fas fa-times close1"></i>
 
 
         <form action="" class="sign__up">
@@ -59,8 +59,31 @@
     </div>
     
     <div class="sign in">
+         
+        <i class="fas fa-times close2"></i>
+
+
         <form action="" class="sign__in">
+
+            <h1 class="form__title">Sign in  to start listening.</h1>
+             <label for="email" class="email">
+                <input type="email" id="email" placeholder="Enter your email">
+            </label>
+
+            <label for="passwordA" class="password">
+                <input type="password" id="password" placeholder="Enter  password">
+            </label>
             
+            <label for="show-password2" class="show-password">
+                <input type="checkbox" id="show-password2" 
+                onchange="document.querySelector('#password').type = this.checked ? 'text' : 'password'; ">
+               show password
+            </label>
+
+            <label for="submit" class="submit">
+                <input type="submit" value="sign in" id="submit" >
+            </label>
+
         </form>
     </div>
 
@@ -86,7 +109,7 @@
 
             <div class="navbar__links">
                 <a href="#" class="button_up">sign up</a>
-                <a href="#">log in</a>
+                <a href="#" class="button_in">log in</a>
             </div>
             <div class="bars__icons">
                 <div class="bars__icon"> </div>
@@ -167,6 +190,40 @@
     <!-- !footer section end -->
 
     <script src="./js/index.js"></script>
+    <script>
+        const barsIcon = document.querySelector('.bars__icons');
+const navbar = document.querySelector('.navbar__links');
+const close1 = document.querySelector('.close1');
+const close2 = document.querySelector('.close2');
+const form = document.querySelectorAll('.sign');
+const signUp = document.querySelector('.button_up');
+const signIn = document.querySelector('.button_in');
+
+
+
+// !mobile navbar codes start
+
+barsIcon.addEventListener('click', () => {
+    barsIcon.classList.toggle('active');
+    navbar.classList.toggle('active')
+})
+
+// !mobile navbar codes end
+
+signUp.addEventListener('click', () => {
+    form[0].classList.add('active')
+})
+signIn.addEventListener('click', () => {
+    form[1].classList.add('active')
+})
+
+close1.addEventListener('click', () => {
+    form[0].classList.remove('active')
+})
+close2.addEventListener('click', () => {
+    form[1].classList.remove('active')
+})
+    </script>
 </body>
 
 </html>
