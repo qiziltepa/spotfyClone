@@ -258,4 +258,12 @@ body{
     .bottom-nav .text{
         width: 50px;
     }
+    .disable{
+        width: 150px;
+        height: 150px;
+        
+    }
+    .disable .text{
+        font-size: 1.2rem;
+    }
 }
