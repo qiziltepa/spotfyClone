@@ -31,7 +31,10 @@
     align-items: center;
     transition: all .5s ease;
 }
-.sign.active{
+.sign.up.active{
+    top: 0;
+}
+.sign.in.active{
     top: 0;
 }
 .fa-times{
@@ -42,9 +45,7 @@
     right: 30px;
     cursor: pointer;
 }
-.in {
-    display: none;
-}
+
 .form__title{
     font-size: 24px;
     color: var(--yellow);
