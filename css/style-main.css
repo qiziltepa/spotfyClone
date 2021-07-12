@@ -68,6 +68,16 @@ form #searchInput{
     color: var(--blue);
     font-size: 20px;
 }
+.search__music_item{
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.search__music_item .music{
+    max-width: 450px;
+}
 /* !search bar styles */
 
 body{
