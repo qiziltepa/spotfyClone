@@ -73,7 +73,7 @@ form #searchInput{
     top: 200px;
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    
 }
 .search__music_item .music{
     max-width: 450px;

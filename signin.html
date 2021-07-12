@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sign in</title>
+</head>
+<body>
+    <div class="sign in">
+         
+        <a href="index.html"><i class="fas fa-times close1"></i></a>
+
+
+        <form action="" class="sign__in">
+
+            <h1 class="form__title">Sign in  to start listening.</h1>
+             <label for="email" class="email">
+                <input type="email" id="email" placeholder="Enter your email">
+            </label>
+
+            <label for="passwordA" class="password">
+                <input type="password" id="password" placeholder="Enter  password">
+            </label>
+            
+            <label for="show-password2" class="show-password">
+                <input type="checkbox" id="show-password2" 
+                onchange="document.querySelector('#password').type = this.checked ? 'text' : 'password'; ">
+               show password
+            </label>
+
+            <label for="submit" class="submit">
+                <input type="submit" value="sign in" id="submit" >
+            </label>
+
+        </form>
+    </div>
+</body>
+</html>
