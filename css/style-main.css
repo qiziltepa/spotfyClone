@@ -357,10 +357,27 @@ body{
         height:0px;
     }
     .text{
-        font-size: .8rem;
+        font-size: 1rem;
     }
     .btn{
         font-size: 1.1rem;
+    }
+    .play{
+        
+        left: 110px;
+        bottom: 15px;
+    
+    }
+    .item-play p{
+
+        left: 110px;
+        bottom: 0px;
+  
+    }
+    .seen{
+        position: absolute;
+        left: 90px;
+        bottom: 0px;
     }
 }
 @media screen and (max-width:576px) {
@@ -407,5 +424,19 @@ body{
     }
     .disable .text{
         font-size: 1.2rem;
+    }
+    .play{
+        left: 100px;
+        bottom: 10px;
+      
+    }
+    .item-play p{
+        left: 110px;
+        bottom: -10px;
+       
+    }
+    .seen{
+        left: 90px;
+        bottom: -10px;
     }
 }
