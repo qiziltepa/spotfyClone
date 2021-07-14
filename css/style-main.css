@@ -321,6 +321,7 @@ body{
 
 .bottom-nav{
     display: none;
+    bottom: 0;
 }
 .about{
     position: absolute;
@@ -409,7 +410,7 @@ body{
         width: 100%;
         flex-direction: row;
         justify-content: space-around;
-        position: sticky;
+        position: fixed;
         bottom: 0%;
         z-index: 2;
         background-color: var(--black);
