@@ -4,8 +4,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/music-item.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    <div id="audio" class="screen">
+       <div class="img">
+        <img src="./img/windows.jpg" alt="img">
+       </div>
+        <div class="range">
+          <input type="range" name="time" id="timeRange" value="0" oninput="timeCurrent()">
+          <div class="timeController">
+            <p id="timeNow"></p>
+            <p id="timeTotal"></p>
+          </div>
+      </div>
+    <div class="control">
+      <button class="play next" onclick="select(-1)"><i class="material-icons">skip_previous</i></button>
+      <button class="play player" onclick="listen()"><i class="material-icons" id="pause">play_arrow</i></button>
+      <button class="play prev" onclick="select(1)"><i class="material-icons">skip_next</i></button>
+    </div>
+    </div>
+    <div class="back" onclick="back()">
+     Back
+    </div>
+    <div class="circle-1">
+
+    </div>
+    <div class="circle-2">
+      
+    </div>
 </body>
 <script src="./js/musicItem.js"></script>
 </html>

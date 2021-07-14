@@ -67,14 +67,7 @@ function PartItemCreator(id,info){
     //Example 
     PartItemCreator(1,"For You");
     //Add ItemMusic
-    MusicItem("Rap God","Eminem",1200,1,"./img/back-image.jpg","https://open.spotify.com")
-    MusicItem("Without Me","Eminem",1200,1,"./img/windows.jpg","https://open.spotify.com")
-    MusicItem("The Real Slim Shady","Eminem",1200,1,"./img/back-image.jpg","https://open.spotify.com")
-    MusicItem("Rap God","Eminem",1200,1,"./img/windows.jpg","https://open.spotify.com")
-    MusicItem("Without Me","Eminem",1200,1,"./img/back-image.jpg","https://open.spotify.com")
-    MusicItem("The Real Slim Shady","Eminem",1200,1,"./img/windows.jpg","https://open.spotify.com")
-    MusicItem("Rap God","Eminem",1200,1,"./img/back-image.jpg","https://open.spotify.com")
-    MusicItem("Without Me","Eminem",1200,1,"./img/back-image.jpg","https://open.spotify.com")
+    MusicItem("Telbalarcha","Doxxim",1200,1,"./img/windows.jpg","music-item.html")
     //Add music 
 
     PartItemCreator(2,"Favorite");
