@@ -156,6 +156,7 @@
 .main__image img {
     height: 100vh;
     width: 150%;
+    object-fit: cover;
     overflow: hidden;
     z-index: 0;
 }
@@ -168,8 +169,8 @@
     }
 
     50% {
-        opacity: .8;
-        transform: scale(1.2);
+        opacity: .9;
+        transform: scale(1.1);
     }
 
     100% {

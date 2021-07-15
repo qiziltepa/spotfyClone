@@ -191,12 +191,12 @@ body{
 .item-img{
     display: flex;
     justify-content: center;
-    border-radius: 50%;
-    width: 120px;
-    height:120px;
     overflow: hidden;
 }
 .item-img img{
+    border-radius: 50%;
+    width: 120px;
+    height:120px;
     object-fit: cover;
 }
 .item-text{
