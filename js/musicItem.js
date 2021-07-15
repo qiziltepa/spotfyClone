@@ -33,10 +33,14 @@ function runner(){
 timeTotal=document.getElementById('timeTotal')
 timeNow.innerText=`${Math.floor(audio.currentTime/60)}`+":"+sec;    
 timeTotal.innerText=`${Math.floor(audio.duration/60)}`+":"+`${Math.ceil(audio.duration%60)}`;
+if(timeNow.innerText==timeTotal.innerText){
+   audio.currentTime=0;
+   audio.pause();
+    playPause.innerText='play_arrow'
+}
 }
 setInterval(() => {
     runner();
-    console.log(audio.duration);
 }, 1000);
 
 
