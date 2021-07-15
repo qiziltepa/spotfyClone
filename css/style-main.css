@@ -195,6 +195,8 @@ body{
     width: 90%;
     height:90%;
     overflow: hidden;
+}
+.item-img img{
     object-fit: cover;
 }
 .item-text{
