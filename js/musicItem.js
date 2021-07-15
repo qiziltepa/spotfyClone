@@ -5,8 +5,6 @@ audio.setAttribute('controls','');
 audio.setAttribute('src','./src/doxxim_telbalarcha_33.mp3');
 var playPause=document.getElementById('pause')
 var timer=document.getElementById('timeRange');
-audio.play();
-playPause.innerText='pause'
 function listen(){
     if (audio.paused) {
         audio.play();
@@ -29,15 +27,37 @@ function runner(){
     if(sec<10){
         sec=`0`+sec;
     }
-        timer.value=`${audio.currentTime}`;
-        var timeNow=document.getElementById('timeNow'),
+    timer.value=`${audio.currentTime}`;
+    timer.setAttribute('max',`${audio.duration}`)
+    var timeNow=document.getElementById('timeNow'),
 timeTotal=document.getElementById('timeTotal')
 timeNow.innerText=`${Math.floor(audio.currentTime/60)}`+":"+sec;    
 timeTotal.innerText=`${Math.floor(audio.duration/60)}`+":"+`${Math.ceil(audio.duration%60)}`;
 }
 setInterval(() => {
     runner();
+    console.log(audio.duration);
 }, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
 function back(){
     history.back();
 }
+
+var volumeMusic=document.getElementById('volume')
+volumeValue=document.getElementById('volumeValue')
+function volum(){
+audio.volume=volumeMusic.value/100;
+volumeValue.innerText=volumeMusic.value;
+}
+volum();

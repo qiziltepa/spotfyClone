@@ -1,6 +1,9 @@
 var k=0;
 function plusDivs(n,id){
   var x = $(`#${id} .music`),len=x.length;
+  if(len<6){
+    k=NaN;
+  }
   if(n==1){
     k--;
     for(var i=0;i<=len-1;i++){
